@@ -15,4 +15,4 @@ This project uses [Playwright](https://playwright.dev/) and [axe-core](https://g
 
 ```bash
 npm install
-<img width="632" alt="image" src="https://github.com/user-attachments/assets/7d608395-8bcb-45e0-8c59-350726ba54e8" />
+
