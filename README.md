@@ -1,6 +1,17 @@
-# Accessibility-Testing-suite
-Playwright + Axe-core integration
+# Accessibility Testing Suite
 
-Scan pages for accessibility issues (color contrast, labels, etc.)
+This project uses [Playwright](https://playwright.dev/) and [axe-core](https://github.com/dequelabs/axe-core) to run automated accessibility scans on web pages.
 
-Generate compliance html reports
+**Features**
+
+- Automated a11y scans with Axe
+- HTML and JSON reporting
+- Works with any webpage (just change the URL)
+- Built with Playwright Test Runner
+
+**How to Use**
+
+1. Install dependencies:
+
+```bash
+npm install
