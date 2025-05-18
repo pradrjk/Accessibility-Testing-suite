@@ -21,4 +21,5 @@ This project uses [Playwright](https://playwright.dev/) and [axe-core](https://g
 
 ```bash
 npm install
+Change URL in accessibility.spec.js file
 
