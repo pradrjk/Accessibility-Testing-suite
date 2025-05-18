@@ -17,9 +17,6 @@ This project uses [Playwright](https://playwright.dev/) and [axe-core](https://g
 
 **How to Use**
 
-1. Install dependencies:
-
-```bash
-npm install
-Change URL in accessibility.spec.js file
+1. Install dependencies: npm install
+2. Change URL in accessibility.spec.js file
 
