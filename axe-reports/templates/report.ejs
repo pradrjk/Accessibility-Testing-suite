@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Axe Accessibility Report - <%= context %></title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .violation { margin-bottom: 20px; border-bottom: 1px solid #ccc; padding-bottom: 10px; }
+    .violation h3 { margin-bottom: 5px; color: #d8000c; }
+    .selector { font-family: monospace; color: #333; margin-top: 5px; }
+    .summary { margin-top: 5px; font-size: 0.9em; color: #555; }
+  </style>
+</head>
+<body>
+  <h1>Accessibility Report: <%= context %></h1>
+  <p>Found <strong><%= violations.length %></strong> issues.</p>
+
+  <% violations.forEach((v, i) => { %>
+    <div class="violation">
+      <h3><%= i + 1 %>. <%= v.id %>: <%= v.description %></h3>
+      <div><strong>Impact:</strong> <%= v.impact %></div>
+      <div><strong>Help:</strong> <a href="<%= v.helpUrl %>" target="_blank"><%= v.help %></a></div>
+      <% v.nodes.forEach(node => { %>
+        <div class="selector">Selector: <%= node.target.join(', ') %></div>
+        <div class="summary"><%= node.failureSummary %></div>
+      <% }); %>
+    </div>
+  <% }); %>
+</body>
+</html>
